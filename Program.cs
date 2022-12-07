@@ -3,16 +3,16 @@
 // 782 -> 8
 // 918 -> 1
 
-int Test(){
-    int num = Convert.ToInt32(Console.ReadLine());
-    int dec = num % 100;
-    int one = dec % 10;
-    int second = (dec - one) / 10;
-    return second;
-}
-Console.WriteLine("Введите трехзначное число: ");
-int res = Test();
-Console.WriteLine($"Вторая цифра числа - {res}");
+// int Test(){
+//     int num = Convert.ToInt32(Console.ReadLine());
+//     int dec = num % 100;
+//     int one = dec % 10;
+//     int second = (dec - one) / 10;
+//     return second;
+// }
+// Console.WriteLine("Введите трехзначное число: ");
+// int res = Test();
+// Console.WriteLine($"Вторая цифра числа - {res}");
 
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
@@ -27,21 +27,22 @@ Console.WriteLine($"Вторая цифра числа - {res}");
 // }
 
 
-// ХЗ КАК РЕШАТЬ
-// int Stuff(int num){
-//     num = Convert.ToInt32(Console.ReadLine());
+// ХЗ, как эту ёбань решить
+// int Stuff(){
+//     int num = Convert.ToInt32(Console.ReadLine());
 //     int a = 10;
 //     int rest = num%a;
-//     if (num > 99){
-//         if (rest < num / a)
+//     while (num > 99){
+//         if (rest > num / a)
 //             a = a * 10;
-//     else
-//         Console.WriteLine("Третьей цифры нет");
+//         else
+//             return rest;
+//     Console.WriteLine("Третьей цифры нет");
 //     }
-//     return rest;
 // }
+// Stuff();
 // Console.WriteLine("Enter your number");
-// int res = Console.WriteLine($"третья цифра {Stuff(num)}");
+// Console.WriteLine($"третья цифра {Stuff()}");
 
 
 
