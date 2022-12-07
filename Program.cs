@@ -3,15 +3,17 @@
 // 782 -> 8
 // 918 -> 1
 
-// int Test(int num){
-//     int a = Convert.ToInt32(Console.ReadLine());
-//     int dec = a % 100;
-//     int one = dec % 10;
-//     int second = (dec - one) / 10;
-// }
-// Console.WriteLine("Введите трехзначное число: ");
-// int result = Test(int a);
-// Console.WriteLine($"Вторая цифра числа - {second}");
+int Test(){
+    int num = Convert.ToInt32(Console.ReadLine());
+    int dec = num % 100;
+    int one = dec % 10;
+    int second = (dec - one) / 10;
+    return second;
+}
+Console.WriteLine("Введите трехзначное число: ");
+int res = Test();
+Console.WriteLine($"Вторая цифра числа - {res}");
+
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 // 645 -> 5
@@ -23,6 +25,24 @@
 //     if (a < 100)
 //         Console.WriteLine("Третьей цифры нет");
 // }
+
+
+// ХЗ КАК РЕШАТЬ
+// int Stuff(int num){
+//     num = Convert.ToInt32(Console.ReadLine());
+//     int a = 10;
+//     int rest = num%a;
+//     if (num > 99){
+//         if (rest < num / a)
+//             a = a * 10;
+//     else
+//         Console.WriteLine("Третьей цифры нет");
+//     }
+//     return rest;
+// }
+// Console.WriteLine("Enter your number");
+// int res = Console.WriteLine($"третья цифра {Stuff(num)}");
+
 
 
 
