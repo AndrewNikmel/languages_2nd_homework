@@ -27,22 +27,22 @@
 // }
 
 
-// ХЗ, как эту ёбань решить
-// int Stuff(){
-//     int num = Convert.ToInt32(Console.ReadLine());
-//     int a = 10;
-//     int rest = num%a;
-//     while (num > 99){
-//         if (rest > num / a)
-//             a = a * 10;
-//         else
-//             return rest;
-//     Console.WriteLine("Третьей цифры нет");
-//     }
+
+// опять сдался
+// int Stuff(int num){
+//     int nice = num%10;
+//     if (num < 1000)
+//         if (num < 100)
+//             Console.WriteLine("has no third symbol");
+//         return nice;
+//         Console.WriteLine($"is {nice}");
+//     else
+//         num = num - nice;
+        
 // }
-// Stuff();
-// Console.WriteLine("Enter your number");
-// Console.WriteLine($"третья цифра {Stuff()}");
+// Console.Write("Enter your number");
+// int num = Convert.ToInt32(Console.Read());
+// Console.WriteLine($"The third unit of Your number {Stuff(num)}");
 
 
 
