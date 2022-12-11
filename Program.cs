@@ -20,29 +20,21 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-// int Count(int a){
-//     for (int a > 100, )
-//     if (a < 100)
-//         Console.WriteLine("Третьей цифры нет");
-// }
-
-
 
 
 void Stuff(int num){
-    int rest = num%10;
-    int lamb = num - rest;
-    if (num < 1000 || num > 99)
-        Console.WriteLine($"Третья цифра - {rest}");
-    else if (num < 99)
+    while (num > 999)
+        num = num/10;
+/////        Console.WriteLine($"Третье число - {num%10}");
+    if (num < 100)
         Console.WriteLine("Третьей цифры нет");
     else
-        num = num / 10;
+        Console.WriteLine($"Третье число - {num%10}");
+        
 }
 Console.WriteLine("Введите число");
 int ent = Convert.ToInt32(Console.ReadLine());
 Stuff(ent);
-
 
 
 
