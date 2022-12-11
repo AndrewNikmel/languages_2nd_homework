@@ -28,21 +28,20 @@
 
 
 
-// опять сдался
-// int Stuff(int num){
-//     int nice = num%10;
-//     if (num < 1000)
-//         if (num < 100)
-//             Console.WriteLine("has no third symbol");
-//         return nice;
-//         Console.WriteLine($"is {nice}");
-//     else
-//         num = num - nice;
-        
-// }
-// Console.Write("Enter your number");
-// int num = Convert.ToInt32(Console.Read());
-// Console.WriteLine($"The third unit of Your number {Stuff(num)}");
+
+void Stuff(int num){
+    int rest = num%10;
+    int lamb = num - rest;
+    if (num < 1000 || num > 99)
+        Console.WriteLine($"Третья цифра - {rest}");
+    else if (num < 99)
+        Console.WriteLine("Третьей цифры нет");
+    else
+        num = num / 10;
+}
+Console.WriteLine("Введите число");
+int ent = Convert.ToInt32(Console.ReadLine());
+Stuff(ent);
 
 
 
